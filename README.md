@@ -22,6 +22,11 @@ npm i
 
 cd ../api
 ./_gen.sh
+# Or manual
+cd api
+dotnet build
+cd ../app
+npm run gen
 ```
 
 The `_gen.sh` script will continuously watch and rebuild the client (see the `.csproj` file for configuration example).
