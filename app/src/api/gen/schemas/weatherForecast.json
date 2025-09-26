@@ -1,0 +1,1 @@
+{"type":"object","properties":{"date":{"type":"string","format":"date"},"temperatureC":{"pattern":"^-?(?:0|[1-9]\\d*)$","type":["integer","string"],"format":"int32"},"temperatureF":{"pattern":"^-?(?:0|[1-9]\\d*)$","type":["integer","string"],"format":"int32"},"summary":{"type":["null","string"]}},"x-readme-ref-name":"WeatherForecast"}
