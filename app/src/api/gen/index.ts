@@ -1,3 +1,7 @@
+export type { GetCrmRecordsQueryKey } from "./hooks/useGetCrmRecords.ts";
+export type { GetCrmRecordsSuspenseQueryKey } from "./hooks/useGetCrmRecordsSuspense.ts";
+export type { GetWeatherForecastQueryKey } from "./hooks/useGetWeatherForecast.ts";
+export type { GetWeatherForecastSuspenseQueryKey } from "./hooks/useGetWeatherForecastSuspense.ts";
 export type { CrmRecord } from "./types/CrmRecord.ts";
 export type { CrmRecordStatusEnumKey, CrmRecordStatus } from "./types/CrmRecordStatus.ts";
 export type { GetCrmRecords200, GetCrmRecordsQueryResponse, GetCrmRecordsQuery } from "./types/GetCrmRecords.ts";
@@ -5,6 +9,10 @@ export type { GetWeatherForecast200, GetWeatherForecastQueryResponse, GetWeather
 export type { WeatherForecast } from "./types/WeatherForecast.ts";
 export { getCrmRecords } from "./clients/getCrmRecords.ts";
 export { getWeatherForecast } from "./clients/getWeatherForecast.ts";
+export { getCrmRecordsQueryKey, getCrmRecordsQueryOptions, useGetCrmRecords } from "./hooks/useGetCrmRecords.ts";
+export { getCrmRecordsSuspenseQueryKey, getCrmRecordsSuspenseQueryOptions, useGetCrmRecordsSuspense } from "./hooks/useGetCrmRecordsSuspense.ts";
+export { getWeatherForecastQueryKey, getWeatherForecastQueryOptions, useGetWeatherForecast } from "./hooks/useGetWeatherForecast.ts";
+export { getWeatherForecastSuspenseQueryKey, getWeatherForecastSuspenseQueryOptions, useGetWeatherForecastSuspense } from "./hooks/useGetWeatherForecastSuspense.ts";
 export { crmRecordStatusEnum } from "./types/CrmRecordStatus.ts";
 export { crmRecordSchema } from "./zod/crmRecordSchema.ts";
 export { crmRecordStatusSchema } from "./zod/crmRecordStatusSchema.ts";

@@ -14,12 +14,14 @@
     "@kubb/core": "^4.1.1",
     "@kubb/plugin-client": "^4.1.1",
     "@kubb/plugin-oas": "^4.1.1",
+    "@kubb/plugin-react-query": "^4.1.1",
     "@kubb/plugin-ts": "^4.1.1",
     "@kubb/plugin-zod": "^4.1.1",
     "typescript": "~5.8.3",
     "vite": "^7.1.7"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.2",
     "kubb": "^3.0.110",
     "zod": "^4.1.11"
   }

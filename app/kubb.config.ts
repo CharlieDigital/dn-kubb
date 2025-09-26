@@ -1,9 +1,11 @@
+import { pluginReactQuery } from './node_modules/@kubb/plugin-react-query/src/plugin';
 import { defineConfig } from '@kubb/core'
 import { pluginOas } from '@kubb/plugin-oas'
 import { pluginTs } from "@kubb/plugin-ts"
 import { pluginClient } from "@kubb/plugin-client"
 import { pluginZod } from "@kubb/plugin-zod"
 
+// To use a custom client: https://kubb.dev/knowledge-base/fetch
 export default defineConfig({
   name: "dn-kubb",
   root: ".",
@@ -36,6 +38,11 @@ export default defineConfig({
       typed: true,
       importPath: "zod",
     }),
-
+    // https://kubb.dev/plugins/plugin-react-query/#example
+    pluginReactQuery({
+      output: {
+        path: './hooks',
+      },
+    })
   ]
 })
